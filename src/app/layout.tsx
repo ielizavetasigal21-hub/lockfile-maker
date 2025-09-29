@@ -1,16 +1,14 @@
 import "./globals.css";
-import type { Metadata } from "next";
 import { ReactNode } from "react";
-
-export const metadata: Metadata = {
-  title: "FilmSlate",
-  description: "Discover the undiscovered in indie cinema.",
-};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 16px" }}>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
