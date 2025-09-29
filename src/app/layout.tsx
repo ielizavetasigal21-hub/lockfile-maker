@@ -1,14 +1,8 @@
-import "./globals.css";
-import { ReactNode } from "react";
-
-export default function RootLayout({ children }: { children: ReactNode }) {
+export const metadata = { title: "FilmSlate" };
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 16px" }}>
-          {children}
-        </div>
-      </body>
+      <body style={{ fontFamily: "system-ui, sans-serif" }}>{children}</body>
     </html>
   );
 }
