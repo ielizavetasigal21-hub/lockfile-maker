@@ -1,3 +1,6 @@
-export default function Home() {
-  return <h1>It works 🎉</h1>;
+// src/app/page.tsx
+import { redirect } from 'next/navigation';
+
+export default function Root() {
+  redirect('/home'); // change to '/browse' or '/profile-summary' if that's your real entry
 }
